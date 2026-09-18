@@ -1,0 +1,42 @@
+dataset,field,type,description
+identity_access_logs,event_id,string,Unique identity/access event identifier
+identity_access_logs,timestamp,datetime,Event timestamp (ISO 8601)
+identity_access_logs,user_id,string,Staff (STFxxxx) or vendor (VNDxxxx) account identifier
+identity_access_logs,role,categorical,staff or vendor
+identity_access_logs,department_or_vendor,categorical,Department (staff) or vendor firm name (vendor)
+identity_access_logs,resource,categorical,System/resource accessed
+identity_access_logs,auth_method,categorical,Authentication method used
+identity_access_logs,outcome,categorical,success or fail
+identity_access_logs,location,categorical,airport-terminal or vendor-remote-site
+identity_access_logs,is_anomalous,binary,Ground-truth label injected by the generator (1=anomalous)
+network_endpoint_logs,event_id,string,Unique network event identifier
+network_endpoint_logs,timestamp,datetime,Event timestamp
+network_endpoint_logs,user_id,string,Associated account identifier
+network_endpoint_logs,src_segment,categorical,Source network segment
+network_endpoint_logs,dst_segment,categorical,Destination network segment
+network_endpoint_logs,src_ip,string,Synthetic source IP (private range)
+network_endpoint_logs,dst_ip,string,Synthetic destination IP
+network_endpoint_logs,port,integer,Destination port
+network_endpoint_logs,protocol,categorical,TCP or UDP
+network_endpoint_logs,bytes,integer,Bytes transferred
+network_endpoint_logs,device_id,string,Synthetic device identifier
+network_endpoint_logs,is_anomalous,binary,Ground-truth label injected by the generator
+operational_vendor_logs,session_id,string,Unique operational-app/vendor session identifier
+operational_vendor_logs,timestamp,datetime,Session timestamp
+operational_vendor_logs,user_id,string,Associated account identifier
+operational_vendor_logs,role,categorical,staff or vendor
+operational_vendor_logs,vendor_firm,string,Vendor firm name (blank for staff)
+operational_vendor_logs,application,categorical,Operational application accessed
+operational_vendor_logs,action,categorical,Action performed
+operational_vendor_logs,privilege_level,categorical,standard or elevated
+operational_vendor_logs,outcome,categorical,success or denied
+operational_vendor_logs,is_anomalous,binary,Ground-truth label injected by the generator
+incident_reports,ticket_id,string,Unique SOC ticket identifier
+incident_reports,timestamp,datetime,Ticket creation timestamp
+incident_reports,category,categorical,Incident category
+incident_reports,severity,categorical,low / medium / high / critical
+incident_reports,description,text,Free-text incident narrative (synthetic)
+unsw_nb15,label,binary,0=normal 1=attack (official ground truth)
+unsw_nb15,(41 numeric network-flow features),numeric,duration/bytes/rate/ttl/jitter/window/connection-count features (see UNSW-NB15 documentation)
+threat_intel,attack_technique_id,string,Real MITRE ATT&CK technique ID (e.g. T1078)
+threat_intel,cveID,string,Real CISA KEV catalog CVE identifier

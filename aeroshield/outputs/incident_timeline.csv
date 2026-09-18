@@ -1,0 +1,122 @@
+timestamp,source,event_id,detail,anomalous
+2026-06-01 00:11:00,identity_access,IA003459,vendor login to Staff-VPN via vpn_password -> success (location=airport-terminal),True
+2026-06-01 10:06:46,network_endpoint,NW005432,"vendor-vpn -> vendor-vpn traffic, port 80, 89,566 bytes (device DEV0292)",False
+2026-06-01 16:30:33,identity_access,IA003446,vendor login to Baggage-Handling-System via sso_password -> success (location=vendor-remote-site),True
+2026-06-01 19:00:43,operational_app,OP002895,export_report on Gate-Management-System (standard) -> success,False
+2026-06-02 04:55:50,network_endpoint,NW001718,"vendor-vpn -> operational-apps traffic, port 5432, 6,572,060 bytes (device DEV0131)",True
+2026-06-02 13:31:07,operational_app,OP001643,view_manifest on Departure-Control-System (standard) -> success,False
+2026-06-02 23:29:04,network_endpoint,NW003098,"vendor-vpn -> operational-apps traffic, port 3389, 8,024,433 bytes (device DEV0144)",True
+2026-06-03 18:32:58,identity_access,IA003379,vendor login to Staff-VPN via vpn_password -> success (location=airport-terminal),True
+2026-06-03 19:30:43,identity_access,IA005406,vendor login to Airfield-Ops-Portal via sso_password -> success (location=vendor-remote-site),False
+2026-06-03 23:14:54,network_endpoint,NW000279,"vendor-vpn -> operational-apps traffic, port 3389, 2,515,886 bytes (device DEV0371)",True
+2026-06-03 23:35:16,operational_app,OP000292,admin_config_change on Baggage-Handling-System (elevated) -> denied,True
+2026-06-04 00:45:04,network_endpoint,NW004964,"vendor-vpn -> operational-apps traffic, port 5432, 7,465,471 bytes (device DEV0313)",True
+2026-06-04 12:36:59,identity_access,IA004970,vendor login to Baggage-Handling-System via vpn_password -> success (location=vendor-remote-site),True
+2026-06-05 02:14:07,operational_app,OP003089,admin_config_change on Cargo-Manifest-System (elevated) -> success,True
+2026-06-05 21:06:02,network_endpoint,NW000718,"vendor-vpn -> vendor-vpn traffic, port 80, 263,762 bytes (device DEV0198)",False
+2026-06-06 01:38:59,network_endpoint,NW004383,"vendor-vpn -> operational-apps traffic, port 22, 1,640,996 bytes (device DEV0356)",True
+2026-06-06 13:00:24,identity_access,IA002006,vendor login to Retail-POS-Backend via sso_mfa -> success (location=airport-terminal),False
+2026-06-07 08:18:19,network_endpoint,NW000293,"vendor-vpn -> vendor-vpn traffic, port 22, 236,413 bytes (device DEV0168)",False
+2026-06-07 17:16:11,identity_access,IA005383,vendor login to HR-Self-Service via sso_mfa -> success (location=vendor-remote-site),False
+2026-06-08 02:25:04,identity_access,IA000708,vendor login to Departure-Control-System via sso_password -> fail (location=airport-terminal),True
+2026-06-08 02:36:36,network_endpoint,NW001610,"vendor-vpn -> internet traffic, port 8080, 307,381 bytes (device DEV0152)",False
+2026-06-08 04:21:43,operational_app,OP001174,admin_config_change on Baggage-Handling-System (elevated) -> success,True
+2026-06-08 04:42:12,identity_access,IA000512,vendor login to Staff-VPN via vpn_password -> success (location=airport-terminal),True
+2026-06-08 10:45:52,identity_access,IA005578,vendor login to Staff-VPN via vpn_password -> success (location=airport-terminal),True
+2026-06-08 11:25:01,network_endpoint,NW001890,"vendor-vpn -> operational-apps traffic, port 22, 2,856,981 bytes (device DEV0247)",True
+2026-06-08 17:20:32,network_endpoint,NW002211,"vendor-vpn -> vendor-vpn traffic, port 80, 261,428 bytes (device DEV0056)",False
+2026-06-08 21:06:31,operational_app,OP002700,admin_config_change on Cargo-Manifest-System (elevated) -> success,True
+2026-06-09 03:29:35,operational_app,OP000454,modify_routing_rule on Baggage-Handling-System (elevated) -> success,True
+2026-06-09 14:30:13,identity_access,IA005004,vendor login to Baggage-Handling-System via vpn_certificate -> success (location=airport-terminal),False
+2026-06-09 19:36:47,operational_app,OP000983,view_manifest on Gate-Management-System (standard) -> success,False
+2026-06-09 19:47:20,identity_access,IA005176,vendor login to Baggage-Handling-System via sso_mfa -> success (location=airport-terminal),False
+2026-06-09 23:32:55,identity_access,IA004336,vendor login to Departure-Control-System via sso_password -> success (location=airport-terminal),True
+2026-06-10 03:15:45,identity_access,IA001633,vendor login to Departure-Control-System via sso_password -> success (location=airport-terminal),True
+2026-06-10 03:34:16,identity_access,IA000092,vendor login to Staff-VPN via sso_password -> success (location=airport-terminal),True
+2026-06-10 16:39:12,network_endpoint,NW000054,"vendor-vpn -> internet traffic, port 8080, 353,084 bytes (device DEV0213)",False
+2026-06-10 17:14:47,identity_access,IA000499,vendor login to Baggage-Handling-System via badge+pin -> success (location=airport-terminal),False
+2026-06-10 17:36:30,identity_access,IA001981,vendor login to Staff-VPN via vpn_password -> success (location=airport-terminal),True
+2026-06-10 23:18:48,identity_access,IA000588,vendor login to Departure-Control-System via vpn_password -> success (location=vendor-remote-site),True
+2026-06-11 09:40:10,operational_app,OP002001,view_manifest on Airfield-Ops-Portal (standard) -> success,False
+2026-06-11 23:44:53,operational_app,OP000757,create_user on Gate-Management-System (elevated) -> denied,True
+2026-06-12 10:15:08,operational_app,OP000667,view_manifest on Gate-Management-System (standard) -> success,False
+2026-06-13 02:19:58,operational_app,OP000852,update_schedule on Departure-Control-System (standard) -> success,False
+2026-06-13 13:48:14,identity_access,IA005674,vendor login to HR-Self-Service via sso_password -> success (location=vendor-remote-site),False
+2026-06-14 04:42:49,identity_access,IA001792,vendor login to Departure-Control-System via vpn_password -> fail (location=vendor-remote-site),True
+2026-06-14 07:57:46,operational_app,OP002490,download_bulk_data on Departure-Control-System (elevated) -> success,True
+2026-06-14 18:29:24,identity_access,IA005081,vendor login to Staff-VPN via vpn_password -> success (location=vendor-remote-site),True
+2026-06-15 08:37:04,operational_app,OP001935,view_manifest on Departure-Control-System (standard) -> success,False
+2026-06-15 12:42:25,identity_access,IA002425,vendor login to Airfield-Ops-Portal via sso_password -> success (location=vendor-remote-site),False
+2026-06-16 02:03:54,operational_app,OP002447,create_user on Departure-Control-System (elevated) -> success,True
+2026-06-16 13:04:18,operational_app,OP002734,admin_config_change on Gate-Management-System (elevated) -> denied,True
+2026-06-17 01:09:50,network_endpoint,NW002159,"vendor-vpn -> operational-apps traffic, port 3389, 3,877,907 bytes (device DEV0073)",True
+2026-06-17 19:58:09,network_endpoint,NW000386,"vendor-vpn -> vendor-vpn traffic, port 22, 359,608 bytes (device DEV0009)",False
+2026-06-18 08:28:12,network_endpoint,NW004886,"vendor-vpn -> vendor-vpn traffic, port 443, 38,629 bytes (device DEV0202)",False
+2026-06-18 10:56:11,network_endpoint,NW003479,"vendor-vpn -> vendor-vpn traffic, port 443, 72,619 bytes (device DEV0226)",False
+2026-06-18 18:22:49,operational_app,OP002717,modify_routing_rule on Gate-Management-System (elevated) -> success,True
+2026-06-19 10:20:34,operational_app,OP003064,download_bulk_data on Departure-Control-System (elevated) -> denied,True
+2026-06-19 14:36:04,network_endpoint,NW005332,"vendor-vpn -> vendor-vpn traffic, port 443, 155,630 bytes (device DEV0058)",False
+2026-06-19 14:51:09,network_endpoint,NW002289,"vendor-vpn -> operational-apps traffic, port 445, 5,824,115 bytes (device DEV0232)",True
+2026-06-19 16:43:30,identity_access,IA001199,vendor login to Staff-VPN via sso_password -> success (location=airport-terminal),False
+2026-06-20 06:49:36,identity_access,IA003614,vendor login to Airfield-Ops-Portal via sso_password -> success (location=airport-terminal),False
+2026-06-20 20:07:45,network_endpoint,NW000736,"vendor-vpn -> operational-apps traffic, port 5432, 1,569,235 bytes (device DEV0245)",True
+2026-06-20 21:08:13,network_endpoint,NW003556,"vendor-vpn -> internet traffic, port 3389, 173,059 bytes (device DEV0269)",False
+2026-06-21 02:57:17,operational_app,OP002960,modify_routing_rule on Departure-Control-System (elevated) -> denied,True
+2026-06-23 00:06:58,network_endpoint,NW006280,"vendor-vpn -> operational-apps traffic, port 445, 8,482,555 bytes (device DEV0153)",True
+2026-06-23 03:08:06,network_endpoint,NW001891,"vendor-vpn -> internet traffic, port 8080, 207,622 bytes (device DEV0073)",False
+2026-06-23 09:34:49,network_endpoint,NW004778,"vendor-vpn -> vendor-vpn traffic, port 443, 300,848 bytes (device DEV0212)",False
+2026-06-23 16:27:43,identity_access,IA002182,vendor login to Maintenance-Ticketing via vpn_certificate -> success (location=airport-terminal),False
+2026-06-23 21:33:13,identity_access,IA001268,vendor login to Airfield-Ops-Portal via sso_password -> success (location=vendor-remote-site),False
+2026-06-24 00:07:44,network_endpoint,NW005324,"vendor-vpn -> internet traffic, port 80, 84,061 bytes (device DEV0316)",False
+2026-06-24 03:39:11,network_endpoint,NW003704,"vendor-vpn -> operational-apps traffic, port 445, 5,086,230 bytes (device DEV0045)",True
+2026-06-25 02:37:00,operational_app,OP001792,modify_routing_rule on Baggage-Handling-System (elevated) -> success,True
+2026-06-25 08:05:04,network_endpoint,NW002165,"vendor-vpn -> internet traffic, port 443, 196,841 bytes (device DEV0132)",False
+2026-06-26 02:00:10,identity_access,IA003444,vendor login to Baggage-Handling-System via vpn_password -> success (location=vendor-remote-site),True
+2026-06-26 03:23:33,network_endpoint,NW005104,"vendor-vpn -> operational-apps traffic, port 3389, 3,282,326 bytes (device DEV0204)",True
+2026-06-26 08:27:35,identity_access,IA005436,vendor login to Departure-Control-System via vpn_password -> fail (location=vendor-remote-site),True
+2026-06-26 20:18:05,network_endpoint,NW003987,"vendor-vpn -> operational-apps traffic, port 5432, 839,028 bytes (device DEV0108)",True
+2026-06-26 23:35:57,identity_access,IA003460,vendor login to Staff-VPN via vpn_password -> success (location=airport-terminal),True
+2026-06-27 12:59:43,identity_access,IA002962,vendor login to Departure-Control-System via vpn_password -> success (location=airport-terminal),True
+2026-06-28 04:30:25,identity_access,IA005642,vendor login to Departure-Control-System via sso_password -> success (location=vendor-remote-site),True
+2026-06-28 07:20:01,identity_access,IA004070,vendor login to HR-Self-Service via sso_password -> success (location=airport-terminal),False
+2026-06-29 07:18:28,network_endpoint,NW004974,"vendor-vpn -> vendor-vpn traffic, port 8080, 164,205 bytes (device DEV0057)",False
+2026-06-29 13:16:56,network_endpoint,NW003731,"vendor-vpn -> vendor-vpn traffic, port 443, 192,034 bytes (device DEV0332)",False
+2026-06-30 01:02:24,network_endpoint,NW005419,"vendor-vpn -> operational-apps traffic, port 3389, 625,819 bytes (device DEV0286)",True
+2026-06-30 01:07:15,identity_access,IA005227,vendor login to Departure-Control-System via sso_password -> fail (location=vendor-remote-site),True
+2026-06-30 03:10:35,operational_app,OP000714,download_bulk_data on Gate-Management-System (elevated) -> success,True
+2026-06-30 10:21:28,network_endpoint,NW005726,"vendor-vpn -> vendor-vpn traffic, port 5432, 141,356 bytes (device DEV0176)",False
+2026-06-30 14:06:54,operational_app,OP001170,read_sensor_status on Gate-Management-System (standard) -> success,False
+2026-07-01 01:32:31,network_endpoint,NW003049,"vendor-vpn -> operational-apps traffic, port 3389, 7,036,128 bytes (device DEV0346)",True
+2026-07-01 02:18:37,operational_app,OP002550,create_user on Cargo-Manifest-System (elevated) -> denied,True
+2026-07-03 12:47:00,network_endpoint,NW003478,"vendor-vpn -> operational-apps traffic, port 5432, 8,280,053 bytes (device DEV0194)",True
+2026-07-03 17:20:39,identity_access,IA003997,vendor login to Baggage-Handling-System via sso_password -> success (location=vendor-remote-site),True
+2026-07-04 00:16:56,network_endpoint,NW003705,"vendor-vpn -> operational-apps traffic, port 5432, 7,002,084 bytes (device DEV0012)",True
+2026-07-04 02:19:48,operational_app,OP002438,admin_config_change on Cargo-Manifest-System (elevated) -> denied,True
+2026-07-04 03:30:43,network_endpoint,NW005956,"vendor-vpn -> operational-apps traffic, port 445, 8,153,870 bytes (device DEV0028)",True
+2026-07-04 03:50:09,network_endpoint,NW000256,"vendor-vpn -> vendor-vpn traffic, port 443, 116,173 bytes (device DEV0383)",False
+2026-07-04 10:20:57,operational_app,OP003025,modify_routing_rule on Gate-Management-System (elevated) -> denied,True
+2026-07-04 12:58:07,network_endpoint,NW002985,"vendor-vpn -> operational-apps traffic, port 445, 8,215,550 bytes (device DEV0262)",True
+2026-07-06 00:53:34,operational_app,OP002823,admin_config_change on Cargo-Manifest-System (elevated) -> success,True
+2026-07-06 04:13:59,identity_access,IA001485,vendor login to Baggage-Handling-System via vpn_password -> success (location=vendor-remote-site),True
+2026-07-07 03:41:04,identity_access,IA002183,vendor login to Departure-Control-System via vpn_password -> success (location=airport-terminal),True
+2026-07-07 09:13:39,operational_app,OP000329,update_schedule on Gate-Management-System (standard) -> success,False
+2026-07-07 18:52:36,identity_access,IA003458,vendor login to Staff-VPN via vpn_password -> success (location=vendor-remote-site),True
+2026-07-07 21:55:29,network_endpoint,NW005546,"vendor-vpn -> internet traffic, port 443, 3,771 bytes (device DEV0327)",False
+2026-07-08 00:35:31,identity_access,IA003905,vendor login to Baggage-Handling-System via vpn_password -> success (location=airport-terminal),True
+2026-07-08 01:01:15,operational_app,OP000343,admin_config_change on Departure-Control-System (elevated) -> denied,True
+2026-07-08 13:29:23,network_endpoint,NW005958,"vendor-vpn -> operational-apps traffic, port 22, 6,367,372 bytes (device DEV0202)",True
+2026-07-08 15:14:06,network_endpoint,NW000467,"vendor-vpn -> internet traffic, port 8080, 151,342 bytes (device DEV0184)",False
+2026-07-08 18:07:40,operational_app,OP000671,download_bulk_data on Airfield-Ops-Portal (elevated) -> success,True
+2026-07-09 04:22:57,network_endpoint,NW002821,"vendor-vpn -> operational-apps traffic, port 445, 1,368,238 bytes (device DEV0329)",True
+2026-07-10 02:55:53,network_endpoint,NW001876,"vendor-vpn -> operational-apps traffic, port 3389, 6,262,887 bytes (device DEV0152)",True
+2026-07-10 09:13:20,identity_access,IA003108,vendor login to Baggage-Handling-System via sso_password -> success (location=vendor-remote-site),False
+2026-07-10 18:48:11,identity_access,IA004486,vendor login to Retail-POS-Backend via vpn_certificate -> success (location=airport-terminal),False
+2026-07-11 21:09:35,identity_access,IA001278,vendor login to Airfield-Ops-Portal via sso_mfa -> success (location=vendor-remote-site),False
+2026-07-12 01:51:42,network_endpoint,NW003279,"vendor-vpn -> operational-apps traffic, port 445, 8,707,528 bytes (device DEV0195)",True
+2026-07-12 13:42:44,identity_access,IA004670,vendor login to Gate-Management-System via vpn_certificate -> success (location=vendor-remote-site),False
+2026-07-12 23:16:46,operational_app,OP001199,admin_config_change on Gate-Management-System (elevated) -> success,True
+2026-07-14 09:23:26,operational_app,OP002709,download_bulk_data on Gate-Management-System (elevated) -> success,False
+2026-07-14 14:58:34,identity_access,IA005199,vendor login to Departure-Control-System via sso_password -> fail (location=airport-terminal),True
+2026-07-14 17:03:12,network_endpoint,NW001415,"vendor-vpn -> operational-apps traffic, port 5432, 2,699,565 bytes (device DEV0263)",True
+2026-07-14 18:24:17,identity_access,IA006061,vendor login to Staff-VPN via vpn_password -> success (location=vendor-remote-site),True
+2026-07-14 21:13:44,identity_access,IA005482,vendor login to Cargo-Manifest-System via sso_password -> success (location=vendor-remote-site),False

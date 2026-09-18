@@ -1,0 +1,70 @@
+{
+  "incident_id": "INC-VND2023",
+  "technique_mapping": [
+    {
+      "observed_indicator": "Off-hours VPN authentication to sensitive resources using a vendor account",
+      "attack_technique_id": "T1078",
+      "attack_technique_name": "Valid Accounts",
+      "attack_tactics": [
+        "stealth",
+        "persistence",
+        "privilege-escalation",
+        "initial-access"
+      ],
+      "attack_description_excerpt": "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Compromised credentials may be used to bypass access controls placed on various resources on systems within the network a",
+      "project_evidence": "Identity/access anomaly (Section 3.1) + incident timeline (Section 4)"
+    },
+    {
+      "observed_indicator": "Vendor remote-access session used as the entry point into the environment",
+      "attack_technique_id": "T1133",
+      "attack_technique_name": "External Remote Services",
+      "attack_tactics": [
+        "persistence",
+        "initial-access"
+      ],
+      "attack_description_excerpt": "Adversaries may leverage external-facing remote services to initially access and/or persist within a network. Remote services such as VPNs, Citrix, and other access mechanisms allow users to connect to internal enterprise network resources from external locations. There are often",
+      "project_evidence": "Vendor-connection log correlation (Section 4)"
+    },
+    {
+      "observed_indicator": "Cross-segment network traffic from vendor-VPN into the operational network",
+      "attack_technique_id": "T1021",
+      "attack_technique_name": "Remote Services",
+      "attack_tactics": [
+        "lateral-movement"
+      ],
+      "attack_description_excerpt": "Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to log into a service that accepts remote connections, such as telnet, SSH, and VNC. The adversary may then perform actions as the logged-on user.",
+      "project_evidence": "Network/endpoint UBA anomaly (Section 3.2)"
+    },
+    {
+      "observed_indicator": "Elevated-privilege operational-application actions (admin_config_change, create_user)",
+      "attack_technique_id": "T1548",
+      "attack_technique_name": "Abuse Elevation Control Mechanism",
+      "attack_tactics": [
+        "privilege-escalation"
+      ],
+      "attack_description_excerpt": "Adversaries may circumvent mechanisms designed to control privilege elevation to gain higher-level permissions. Most modern systems contain native elevation control mechanisms that are intended to limit privileges that a user can perform on a machine. Authorization has to be gran",
+      "project_evidence": "Operational-app log correlation (Section 4)"
+    },
+    {
+      "observed_indicator": "create_user action on operational applications during the incident window",
+      "attack_technique_id": "T1136",
+      "attack_technique_name": "Create Account",
+      "attack_tactics": [
+        "persistence"
+      ],
+      "attack_description_excerpt": "Adversaries may create an account to maintain access to victim systems.(Citation: Symantec WastedLocker June 2020) With a sufficient level of access, creating such accounts may be used to establish secondary credentialed access that do not require persistent remote access tools t",
+      "project_evidence": "Operational-app log correlation (Section 4)"
+    },
+    {
+      "observed_indicator": "download_bulk_data action flagged as anomalous",
+      "attack_technique_id": "T1020",
+      "attack_technique_name": "Automated Exfiltration",
+      "attack_tactics": [
+        "exfiltration"
+      ],
+      "attack_description_excerpt": "Adversaries may exfiltrate data, such as sensitive documents, through the use of automated processing after being gathered during Collection.(Citation: ESET Gamaredon June 2020) ",
+      "project_evidence": "Operational-app log correlation (Section 4)"
+    }
+  ],
+  "source": "MITRE ATT&CK Enterprise (mitre-attack/attack-stix-data, official)"
+}

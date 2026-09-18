@@ -1,0 +1,24 @@
+AEROSHIELD EXECUTIVE OPERATIONAL-SECURITY RISK REPORT
+Prepared for: Airport operations leadership and CISO
+Reporting window: last 45 days (synthetic evaluation dataset)
+
+HEADLINE
+One confirmed, evidence-backed security incident (INC-VND2023) was reconstructed from
+correlated identity, network and operational-application evidence, consistent with vendor-credential
+compromise and lateral movement toward operational systems. No passenger-facing service disruption
+occurred in the reviewed window.
+
+RISK POSTURE
+- 27% of logged incident tickets were rated high or
+  critical severity; 84% of all tickets were confirmed
+  technical issues rather than false positives, indicating alert triage is reasonably well-tuned.
+- 9 accounts triggered anomalies across multiple
+  independent systems, the pattern most associated with genuine compromise rather than noise.
+- Vendor "SkyLink Ground Services" shows the highest anomaly rate among vendor connections
+  (10.2% of sessions), warranting a targeted
+  access review.
+
+RECOMMENDATION FOR INVESTMENT DECISION
+The comparative control simulation (Section 7) quantifies how much three candidate investments
+(vendor VPN MFA, privileged-access monitoring, tighter network segmentation) would have reduced the
+likelihood and impact of the reconstructed incident, to support budget prioritisation.

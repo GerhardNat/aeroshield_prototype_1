@@ -1,0 +1,39 @@
+{
+  "source": "UNSW-NB15 (real, hybrid real+injected network traffic)",
+  "train_rows": 82332,
+  "test_rows": 175341,
+  "train_attack_share": 0.5506,
+  "test_attack_share": 0.6806,
+  "supervised": {
+    "precision": 0.9908,
+    "recall": 0.8584,
+    "f1": 0.9198,
+    "roc_auc": 0.9867,
+    "confusion_matrix": [
+      [
+        55047,
+        953
+      ],
+      [
+        16904,
+        102437
+      ]
+    ]
+  },
+  "unsupervised": {
+    "precision": 0.599,
+    "recall": 0.599,
+    "f1": 0.599
+  },
+  "top_features": {
+    "sttl": 0.09192443034012057,
+    "ct_dst_src_ltm": 0.08664203831814644,
+    "ct_state_ttl": 0.06366829659325511,
+    "ct_dst_sport_ltm": 0.06076445590173775,
+    "xState": 0.05777879937831409,
+    "smean": 0.05769567977240727,
+    "sbytes": 0.056007857769978756,
+    "rate": 0.043399352227008914
+  },
+  "interpretation": "Trained and evaluated on the official UNSW-NB15 train/test split (a genuine generalisation test, not a random re-split of the same pool), the supervised detector transfers cleanly from the synthetic-log methodology in Section 3.1 to real network traffic. The unsupervised Isolation Forest, given no label access, still recovers a substantial share of real attacks from behavioural features alone - corroborating the same 'baseline deviation flags real threats' finding as the synthetic UBA module (Section 3.2) and the NASA real-telemetry module (Section 9), now on a third, independent real/hybrid data source."
+}

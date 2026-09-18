@@ -1,0 +1,43 @@
+{
+  "identity_access_logs": {
+    "rows": 6200,
+    "anomalous": 155,
+    "date_range": [
+      "2026-06-01 00:11:00",
+      "2026-07-15 23:54:59"
+    ],
+    "unique_users": 215,
+    "fail_rate": 0.0652
+  },
+  "network_endpoint_logs": {
+    "rows": 6400,
+    "anomalous": 140,
+    "unique_devices": 399,
+    "mean_bytes": 293190.4,
+    "median_bytes": 201413.0
+  },
+  "operational_vendor_logs": {
+    "rows": 3100,
+    "anomalous": 93,
+    "elevated_privilege_share": 0.2565
+  },
+  "incident_reports": {
+    "rows": 340,
+    "category_counts": {
+      "false_positive": 56,
+      "phishing": 51,
+      "access_abuse": 50,
+      "network_intrusion": 44,
+      "malware": 38,
+      "vendor_risk": 36,
+      "policy_violation": 36,
+      "data_exposure": 29
+    },
+    "severity_counts": {
+      "low": 144,
+      "medium": 104,
+      "high": 65,
+      "critical": 27
+    }
+  }
+}

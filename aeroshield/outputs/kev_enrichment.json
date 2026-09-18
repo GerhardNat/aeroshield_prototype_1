@@ -1,0 +1,64 @@
+{
+  "catalog_total_entries": 1710,
+  "catalog_date_released": "2026-09-14T19:00:02.426Z",
+  "vendor_vpn_remote_access_relevant_count": 399,
+  "most_recent_relevant_examples": [
+    {
+      "cveID": "CVE-2026-76461",
+      "vendorProject": "Cisco",
+      "product": "Secure Email Gateway",
+      "vulnerabilityName": "Cisco Secure Email Gateway SQL Injection Vulnerability",
+      "dateAdded": "2026-09-14"
+    },
+    {
+      "cveID": "CVE-2026-19490",
+      "vendorProject": "Citrix",
+      "product": "NetScaler",
+      "vulnerabilityName": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "dateAdded": "2026-09-09"
+    },
+    {
+      "cveID": "CVE-2025-25249",
+      "vendorProject": "Fortinet",
+      "product": "Multiple Products",
+      "vulnerabilityName": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
+      "dateAdded": "2026-09-09"
+    },
+    {
+      "cveID": "CVE-2026-20079",
+      "vendorProject": "Cisco",
+      "product": "Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
+      "vulnerabilityName": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "dateAdded": "2026-09-09"
+    },
+    {
+      "cveID": "CVE-2026-8452",
+      "vendorProject": "Citrix",
+      "product": "NetScaler ADC and NetScaler Gateway",
+      "vulnerabilityName": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "dateAdded": "2026-08-26"
+    },
+    {
+      "cveID": "CVE-2019-1068",
+      "vendorProject": "Microsoft",
+      "product": "SQL Server",
+      "vulnerabilityName": "Microsoft SQL Server Remote Code Execution Vulnerability",
+      "dateAdded": "2026-08-26"
+    },
+    {
+      "cveID": "CVE-2026-20349",
+      "vendorProject": "Cisco",
+      "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
+      "vulnerabilityName": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
+      "dateAdded": "2026-08-11"
+    },
+    {
+      "cveID": "CVE-2026-20316",
+      "vendorProject": "Cisco",
+      "product": "Secure Firewall Management Center (FMC)",
+      "vulnerabilityName": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
+      "dateAdded": "2026-07-29"
+    }
+  ],
+  "interpretation": "Of 1710 vulnerabilities CISA currently lists as actively exploited in the wild, 399 involve VPN, remote-access, or remote-gateway products \u2014 the same attack-surface category (vendor VPN) implicated in the simulated INC-VND2023 scenario and targeted by Simulation Scenario A (vendor VPN MFA, Section 6). This is live external corroboration that vendor/remote-access hardening is a currently active, real-world priority, not just a scenario assumption."
+}

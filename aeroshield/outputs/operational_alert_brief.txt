@@ -1,0 +1,22 @@
+AEROSHIELD SOC OPERATIONAL ALERT BRIEF
+Reporting window: last 45 days (synthetic evaluation dataset)
+
+TOP PRIORITY: INC-VND2023
+Subject: VND2023
+Window: 2026-06-01 00:11:00 to 2026-07-14 18:24:17
+Correlated evidence across identity/access, network/endpoint and operational-application logs for VND2023 shows a coherent pattern consistent with credential compromise followed by lateral movement: off-hours authentication to a sensitive resource, cross-segment network traffic toward the operational network shortly afterward, and an elevated-privilege action on an operational application within the same window. The event IDs above (IA003459, IA003446, NW001718, NW003098, IA003379, NW000279...) provide the evidentiary chain.
+
+Recommended immediate actions:
+- Suspend/disable the VND2023 account and force re-authentication with MFA before restoral.
+- Isolate the associated device/VPN session at the network layer to block further cross-segment traffic.
+
+MULTI-SOURCE CORRELATION WATCHLIST
+9 accounts show anomalous activity flagged across
+2 or more independent log sources in the same window - the strongest indicator of a real incident
+vs a single noisy alert. Top account: STF1018 (3 sources).
+
+CROSS-SEGMENT TRAFFIC
+140 network events crossed from a
+passenger-facing/vendor segment into the operational-application segment, from
+9 distinct accounts. Each should be checked against the
+change/maintenance calendar; unscheduled instances are investigation priorities.

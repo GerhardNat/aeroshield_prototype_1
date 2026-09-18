@@ -1,0 +1,36 @@
+{
+  "n_iterations": 5000,
+  "scenarios": {
+    "Baseline (current controls)": {
+      "mfa_reduction": 0.0,
+      "pam_detect_boost": 0.0,
+      "seg_lateral_reduction": 0.0
+    },
+    "A: Vendor VPN MFA": {
+      "mfa_reduction": 0.55,
+      "pam_detect_boost": 0.0,
+      "seg_lateral_reduction": 0.0
+    },
+    "B: Privileged-access monitoring": {
+      "mfa_reduction": 0.0,
+      "pam_detect_boost": 0.4,
+      "seg_lateral_reduction": 0.0
+    },
+    "C: Tighter network segmentation": {
+      "mfa_reduction": 0.0,
+      "pam_detect_boost": 0.0,
+      "seg_lateral_reduction": 0.5
+    }
+  },
+  "base_probabilities": {
+    "p_initial_compromise": 0.35,
+    "p_lateral_movement": 0.55,
+    "p_detected_early": 0.3
+  },
+  "assumptions": [
+    "Attempt volume follows a Poisson process, mean 40 credential/vendor-access abuse attempts per year (illustrative, not derived from live data).",
+    "Impact minutes and analyst-hours follow log-normal distributions calibrated to plausible SOC investigation/remediation effort, not measured incident data.",
+    "Scenario effects (MFA, PAM, segmentation) are applied as independent multiplicative reductions on the relevant stage probability; combined-control scenarios are not modelled in this milestone.",
+    "Results are for relative, comparative decision support only, not an absolute forecast of real-world incident rates."
+  ]
+}

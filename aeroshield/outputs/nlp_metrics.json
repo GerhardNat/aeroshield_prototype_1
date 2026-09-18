@@ -1,0 +1,159 @@
+{
+  "classification": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "report": {
+      "access_abuse": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 12.0
+      },
+      "data_exposure": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 7.0
+      },
+      "false_positive": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 14.0
+      },
+      "malware": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 10.0
+      },
+      "network_intrusion": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 11.0
+      },
+      "phishing": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 13.0
+      },
+      "policy_violation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 9.0
+      },
+      "vendor_risk": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 9.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 85.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 85.0
+      }
+    }
+  },
+  "topics": [
+    {
+      "topic": 0,
+      "top_terms": [
+        "network",
+        "traffic",
+        "device",
+        "change",
+        "review",
+        "control",
+        "vendor",
+        "volume"
+      ]
+    },
+    {
+      "topic": 1,
+      "top_terms": [
+        "baggage",
+        "endpoint",
+        "recipient",
+        "precaution",
+        "urgent",
+        "update",
+        "multiple",
+        "link"
+      ]
+    },
+    {
+      "topic": 2,
+      "top_terms": [
+        "maintenance",
+        "vpn",
+        "hours",
+        "window",
+        "action",
+        "reviewed",
+        "accessing",
+        "authorised"
+      ]
+    },
+    {
+      "topic": 3,
+      "top_terms": [
+        "access",
+        "shift",
+        "control",
+        "staff",
+        "privilege",
+        "outside",
+        "normal",
+        "noticed"
+      ]
+    },
+    {
+      "topic": 4,
+      "top_terms": [
+        "scheduled",
+        "traffic",
+        "traced",
+        "spike",
+        "backup",
+        "job",
+        "closed",
+        "benign"
+      ]
+    },
+    {
+      "topic": 5,
+      "top_terms": [
+        "credentials",
+        "email",
+        "staff",
+        "vpn",
+        "suspicious",
+        "confirmed",
+        "requesting",
+        "reported"
+      ]
+    }
+  ],
+  "entity_extraction": {
+    "tickets_with_entity": 291,
+    "total_tickets": 340,
+    "entity_counts_by_type": {
+      "applications": 225,
+      "accounts": 135,
+      "vendors": 54,
+      "devices": 20
+    }
+  }
+}

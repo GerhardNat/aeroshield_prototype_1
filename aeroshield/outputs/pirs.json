@@ -1,0 +1,8 @@
+{
+  "PIRs": [
+    "PIR-1: Which vendor or staff accounts show correlated anomalous activity across two or more log sources (identity, network, operational-app) within a 24-hour window?",
+    "PIR-2: Is there evidence of traffic or access crossing from passenger-facing/vendor segments into operational-application segments outside of an approved change/maintenance window?",
+    "PIR-3: Which vendor firms are associated with the highest volume or severity of security incidents, and does this warrant a change to their access/monitoring posture?",
+    "PIR-4: What proportion of high/critical-severity incident tickets map to confirmed (vs false-positive) technical anomalies, and is that ratio trending up or down?"
+  ]
+}

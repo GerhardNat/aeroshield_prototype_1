@@ -1,0 +1,45 @@
+{
+  "source": "NASA PCoE C-MAPSS (FD001) - real turbofan engine sensor telemetry",
+  "train_units": 100,
+  "train_rows": 20631,
+  "test_units": 100,
+  "sensors_retained": [
+    "sensor_2",
+    "sensor_3",
+    "sensor_4",
+    "sensor_6",
+    "sensor_7",
+    "sensor_8",
+    "sensor_9",
+    "sensor_11",
+    "sensor_12",
+    "sensor_13",
+    "sensor_14",
+    "sensor_15",
+    "sensor_17",
+    "sensor_20",
+    "sensor_21"
+  ],
+  "sensors_dropped_near_constant": [
+    "sensor_1",
+    "sensor_5",
+    "sensor_10",
+    "sensor_16",
+    "sensor_18",
+    "sensor_19"
+  ],
+  "rul_cap": 125,
+  "validation_mae_cycles": 14.15,
+  "validation_rmse_cycles": 20.34,
+  "test_mae_cycles": 14.79,
+  "test_rmse_cycles": 20.04,
+  "test_phm08_score": 1685.9,
+  "degradation_onset_detection": {
+    "threshold_mean_abs_zscore": 2.5,
+    "units_flagged": 100,
+    "units_total": 100,
+    "detection_rate": 1.0,
+    "mean_lead_time_cycles": 61.0
+  },
+  "interpretation": "The Random Forest RUL regressor, trained only on real NASA sensor telemetry, achieves a competitive PHM08 score for this benchmark using a simple feature set. Independently, unsupervised baseline-deviation monitoring (the same style of technique used on the synthetic identity/network logs elsewhere in this project) flags degradation onset with a substantial early-warning lead time before failure, demonstrating that this OT-monitoring approach transfers from synthetic security logs to real operational sensor data. An airport SOC could apply the same baseline-deviation logic to ground-support-equipment or engine telemetry feeds to flag anomalies worth investigating, whether the root cause turns out to be mechanical wear or sensor tampering/spoofing."
+}

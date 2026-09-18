@@ -1,0 +1,101 @@
+{
+  "baseline": {
+    "f1": 0.6667,
+    "recall": 1.0
+  },
+  "evasion_timing_masking": {
+    "recall": 1.0,
+    "f1": 0.6667,
+    "interpretation": "Recall held steady when the attacker masks off-hours timing alone (the model still relies on resource sensitivity, auth-method and access-frequency signals), showing some robustness to single-feature evasion."
+  },
+  "label_poisoning": {
+    "results_by_rate": [
+      {
+        "poison_rate": 0.0,
+        "f1": 0.6667,
+        "recall": 1.0,
+        "precision": 0.5
+      },
+      {
+        "poison_rate": 0.05,
+        "f1": 0.37,
+        "recall": 0.9487,
+        "precision": 0.2298
+      },
+      {
+        "poison_rate": 0.1,
+        "f1": 0.2315,
+        "recall": 1.0,
+        "precision": 0.1309
+      },
+      {
+        "poison_rate": 0.2,
+        "f1": 0.1681,
+        "recall": 0.9744,
+        "precision": 0.092
+      }
+    ],
+    "interpretation": "F1 degrades progressively as a larger share of training labels are flipped, confirming the model is sensitive to training-data integrity; recommend restricting who can label/relabel training data and auditing label provenance."
+  },
+  "feature_drift": {
+    "baseline_fpr": 0.0258,
+    "drift_fpr": 0.049,
+    "drift_precision": 0.3451,
+    "interpretation": "A shift in legitimate off-hours activity (e.g. a new night-shift policy) raises the false-positive rate, since 'off-hours' alone becomes a weaker signal; recommend periodic retraining and a drift-monitoring alert on the off-hours base rate."
+  },
+  "weekly_risk_forecast": [
+    {
+      "week": 23,
+      "mean_risk_score": 0.1275931028906213,
+      "n_high_risk_events": 62,
+      "n_events": 990,
+      "high_risk_rate": 0.06262626262626263
+    },
+    {
+      "week": 24,
+      "mean_risk_score": 0.11595811798304746,
+      "n_high_risk_events": 56,
+      "n_events": 999,
+      "high_risk_rate": 0.056056056056056056
+    },
+    {
+      "week": 25,
+      "mean_risk_score": 0.11508470144653843,
+      "n_high_risk_events": 50,
+      "n_events": 945,
+      "high_risk_rate": 0.05291005291005291
+    },
+    {
+      "week": 26,
+      "mean_risk_score": 0.11760499247796496,
+      "n_high_risk_events": 57,
+      "n_events": 970,
+      "high_risk_rate": 0.058762886597938144
+    },
+    {
+      "week": 27,
+      "mean_risk_score": 0.12399728365081505,
+      "n_high_risk_events": 55,
+      "n_events": 930,
+      "high_risk_rate": 0.05913978494623656
+    },
+    {
+      "week": 28,
+      "mean_risk_score": 0.11915118728027675,
+      "n_high_risk_events": 60,
+      "n_events": 967,
+      "high_risk_rate": 0.06204756980351603
+    },
+    {
+      "week": 29,
+      "mean_risk_score": 0.13128751054925564,
+      "n_high_risk_events": 23,
+      "n_events": 399,
+      "high_risk_rate": 0.05764411027568922
+    }
+  ],
+  "forecast_next_2_weeks": [
+    0.0589,
+    0.059
+  ]
+}

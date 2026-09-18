@@ -1,0 +1,5 @@
+scenario,mean_incidents_per_year,p90_incidents_per_year,mean_disruption_minutes_per_year,mean_analyst_hours_per_year,incident_reduction_vs_baseline
+Baseline (current controls),5.4,8.0,254.6,59.6,0.0
+A: Vendor VPN MFA,2.46,5.0,116.5,27.0,0.5444
+B: Privileged-access monitoring,2.31,4.0,107.3,31.0,0.5722
+C: Tighter network segmentation,2.67,5.0,125.3,29.4,0.5056

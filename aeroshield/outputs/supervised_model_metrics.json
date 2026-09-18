@@ -1,0 +1,107 @@
+{
+  "model": "RandomForestClassifier",
+  "features": [
+    "hour",
+    "is_off_hours",
+    "is_weekend",
+    "is_fail",
+    "user_resource_freq",
+    "role",
+    "resource",
+    "auth_method",
+    "location"
+  ],
+  "n_train": 4650,
+  "n_test": 1550,
+  "confusion_matrix": [
+    [
+      1472,
+      39
+    ],
+    [
+      0,
+      39
+    ]
+  ],
+  "precision": 0.5,
+  "recall": 1.0,
+  "f1": 0.6667,
+  "roc_auc": 0.9969,
+  "classification_report": {
+    "0": {
+      "precision": 1.0,
+      "recall": 0.9741892786234282,
+      "f1-score": 0.9869259135098893,
+      "support": 1511.0
+    },
+    "1": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1-score": 0.6666666666666666,
+      "support": 39.0
+    },
+    "accuracy": 0.9748387096774194,
+    "macro avg": {
+      "precision": 0.75,
+      "recall": 0.9870946393117142,
+      "f1-score": 0.8267962900882779,
+      "support": 1550.0
+    },
+    "weighted avg": {
+      "precision": 0.9874193548387097,
+      "recall": 0.9748387096774194,
+      "f1-score": 0.9788677776215761,
+      "support": 1550.0
+    }
+  },
+  "top_features": [
+    {
+      "feature": "user_resource_freq",
+      "importance": 0.3043351025039671
+    },
+    {
+      "feature": "is_off_hours",
+      "importance": 0.13808498318944304
+    },
+    {
+      "feature": "hour",
+      "importance": 0.10586562108588674
+    },
+    {
+      "feature": "auth_method_badge+pin",
+      "importance": 0.08257740372875477
+    },
+    {
+      "feature": "auth_method_vpn_password",
+      "importance": 0.07646069932488248
+    },
+    {
+      "feature": "auth_method_sso_mfa",
+      "importance": 0.04820323407700336
+    },
+    {
+      "feature": "auth_method_sso_password",
+      "importance": 0.03948784456499267
+    },
+    {
+      "feature": "resource_Staff-VPN",
+      "importance": 0.028641890756489475
+    },
+    {
+      "feature": "resource_Departure-Control-System",
+      "importance": 0.026343353468571827
+    },
+    {
+      "feature": "resource_Baggage-Handling-System",
+      "importance": 0.024101519688675837
+    },
+    {
+      "feature": "auth_method_vpn_certificate",
+      "importance": 0.022143820572455734
+    },
+    {
+      "feature": "is_fail",
+      "importance": 0.020804949664519182
+    }
+  ]
+}

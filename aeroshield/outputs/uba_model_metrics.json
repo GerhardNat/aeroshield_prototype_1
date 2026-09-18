@@ -1,0 +1,21 @@
+{
+  "model": "IsolationForest",
+  "features": [
+    "hour",
+    "is_off_hours",
+    "cross_segment",
+    "log_bytes",
+    "port",
+    "src_segment",
+    "dst_segment",
+    "protocol"
+  ],
+  "contamination": 0.03,
+  "threshold_percentile": 97,
+  "threshold_value": 0.6524,
+  "n_flagged": 192,
+  "precision_vs_injected_label": 0.5833,
+  "recall_vs_injected_label": 0.8,
+  "f1_vs_injected_label": 0.6747,
+  "analyst_interpretation": "The Isolation Forest was trained without label access, using only behavioural features (hour, off-hours flag, cross-segment movement, transfer volume, port, segment/protocol). Flagging the top 3% most anomalous events recovers the large majority of the injected lateral-movement anomalies, confirming that cross-segment traffic combined with off-hours timing and elevated transfer volume is a strong behavioural signature even without labels. Analysts should treat UBA flags as investigation triggers, not automatic blocks, and correlate them with identity/access and operational-application evidence before acting."
+}

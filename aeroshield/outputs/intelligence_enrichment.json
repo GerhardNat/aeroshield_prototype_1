@@ -1,0 +1,34 @@
+{
+  "PIR-1": {
+    "multi_source_flagged_accounts": 9,
+    "top_accounts": {
+      "STF1018": 3,
+      "STF1098": 3,
+      "STF1149": 3,
+      "STF1160": 3,
+      "STF1164": 3,
+      "STF1167": 3,
+      "STF1169": 3,
+      "VND2023": 3,
+      "VND2033": 3
+    }
+  },
+  "PIR-2": {
+    "cross_segment_events_to_operational_network": 140,
+    "distinct_source_accounts": 9
+  },
+  "PIR-3": {
+    "vendor_anomaly_rate": {
+      "SkyLink Ground Services": 0.1019,
+      "Meridian Aircraft Maintenance": 0.0811,
+      "Coastal Catering Co": 0.0,
+      "AeroFuel Solutions": 0.0,
+      "Horizon Cleaning Services": 0.0,
+      "Falcon Cargo Handling": 0.0
+    }
+  },
+  "PIR-4": {
+    "high_critical_ticket_share": 0.2706,
+    "overall_confirmed_rate": 0.8353
+  }
+}
