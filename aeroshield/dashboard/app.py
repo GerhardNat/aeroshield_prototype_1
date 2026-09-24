@@ -13,6 +13,8 @@ import os
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+os.chdir(BASE)
+
 st.set_page_config(page_title="AeroShield SOC Dashboard", layout="wide")
 
 @st.cache_data
